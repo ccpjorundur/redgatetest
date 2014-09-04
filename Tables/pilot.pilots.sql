@@ -10,6 +10,8 @@ CREATE TABLE [pilot].[pilots]
 [visk] [money] NOT NULL CONSTRAINT [DF__pilots__visk__1FCDBCEB] DEFAULT ((0)),
 [userID] [int] NULL
 ) ON [PRIMARY]
+CREATE NONCLUSTERED INDEX [pilots_IX_logonCount] ON [pilot].[pilots] ([logonCount]) ON [PRIMARY]
+
 GO
 ALTER TABLE [pilot].[pilots] ADD CONSTRAINT [pilots_PK] PRIMARY KEY CLUSTERED  ([pilotID]) ON [PRIMARY]
 GO

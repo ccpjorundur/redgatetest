@@ -2,7 +2,8 @@ CREATE TABLE [pilot].[users]
 (
 [userID] [int] NOT NULL IDENTITY(1, 1),
 [userName] [nvarchar] (200) COLLATE Latin1_General_CI_AI NOT NULL,
-[createDate] [datetime2] (0) NOT NULL CONSTRAINT [DF__users__createDat__2E1BDC42] DEFAULT (getutcdate())
+[createDate] [datetime2] (0) NOT NULL CONSTRAINT [DF__users__createDat__2E1BDC42] DEFAULT (getutcdate()),
+[updateDate] [datetime2] (0) NULL
 ) ON [PRIMARY]
 GO
 ALTER TABLE [pilot].[users] ADD CONSTRAINT [users_PK] PRIMARY KEY CLUSTERED  ([userID]) ON [PRIMARY]
