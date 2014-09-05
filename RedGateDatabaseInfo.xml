@@ -55,7 +55,8 @@
     <DataWriteAllFilesInOneDirectory>True</DataWriteAllFilesInOneDirectory>
   </WriteToFileOptions>
   <DataFileSet>
-    <Count>1</Count>
+    <Count>2</Count>
     <DataFile>pilot.eventTypes_Data.sql</DataFile>
+    <DataFile>pilot.shipClasses_Data.sql</DataFile>
   </DataFileSet>
 </DatabaseInformation>
